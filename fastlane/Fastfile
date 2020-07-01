@@ -178,6 +178,6 @@ end
 
 lane :docker do
     gradle(task: "assemble")
-    sh "docker build ../backend/sample/micronaut"
-    sh "docker build ../backend/sample/spring"
+    sh "docker build -t micronaut-sample ../backend/sample/micronaut"
+    sh "docker build -t spring-sample ../backend/sample/spring"
 end
