@@ -25,6 +25,11 @@ Publish new release based on last two tags
 fastlane run_danger
 ```
 
+### docker
+```
+fastlane docker
+```
+
 
 ----
 

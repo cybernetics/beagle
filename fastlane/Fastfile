@@ -175,3 +175,9 @@ error do |lane, exception, options|
      end
   end
 end
+
+lane :docker do
+    gradle(task: "assemble")
+    sh "docker build ../backend/sample/micronaut"
+    sh "docker build ../backend/sample/spring"
+end
